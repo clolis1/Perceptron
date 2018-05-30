@@ -1,0 +1,60 @@
+1) Perceptron Training Combinations
+        (Learning Rate, Iterations) = (Accuracy, Accuracy with StopWords Included)
+    1. 0.1, 10     = 94.5%,  97.9%
+    2. 0.1, 20     = 94.9%,  97.9%
+    3. 0.1, 100    = 94.9%,  97.9%
+    4. 0.5, 10     = 97.9%,  99.3%
+    5. 0.5, 20     = 97.9%,  99.3%
+    6. 0.5, 100    = 97.9%,  99.3%
+    7. 1.0, 10     = 97.9%,  99.3%
+    8. 5.0, 10     = 99.7%,  99.3%
+    9. 20.0, 10    = 100.0%, 99.5%
+    10. 0.1, 2000  = 94.9%,  97.9%
+    11. 100.0, 10  = 99.7%,  99.3%
+    12. 1000.0, 10 = 99.7%,  99.3%
+    13. 1000.0, 1  = 99.7%,  100.0%
+    14. 1.0, 1     = 98.9%,  66.7%
+    15. 0.1, 1     = 89.7%,  99.3%
+    16. 0.001, 1   = 27.1%,  27.1%
+    17. 0.001, 20  = 95.6%,  92.2%
+    18. 0.001, 100 = 90.7%,  92.0%
+    19. 20.0, 20   = 100.0%, 99.5%
+    20. 20.0, 5    = 100.0%, 29.0%
+    
+    From Homework 2, Naive Bayes and Logistic Regression have accuracies of:
+    
+    [java] The accuracy of the Naive Bayes algorithm for text classification without stopWords is 94.35146443514645%
+    [java] The accuracy of the Naive Bayes algorithm for text classification with stopWords is 94.14225941422593%
+    [java] The accuracy of the Logistic Regression algorithm for text classification without stopWords is 96.23430962343096%
+    [java] The accuracy of the Logistic Regression algorithm for text classification with stopWords is 98.11715481171548%
+    
+    With the correct parameters, perceptrons can be more accurate than these algorithms!
+
+2) Neural networks in WEKA.
+
+    Learning Rate: A decreased learning rate will in general increase the accuracy
+    of the algorithm. This is of course, also related to other factors. A lower learning
+    rate means that each feature has less weight when it is considered during the
+    calculation of the perceptron's output. It means that in order to attain a higher
+    accuracy, a smaller learning rate is preferable. (Although a higher learning rate
+    can be paired with a lower number of iterations and lower amount of hidden layers to
+    achieve semi-satisfactory results).
+    
+    Number of Iterations: The more iterations, the more accurate the perceptron will
+    be to the training set. However, this also runs the risk of overfitting. Lower
+    learning rates will necessitate a higher amount of iterations.
+    
+    Momentum: In this particular data set, a stronger momentum value increases
+    the accuracy of the data set. This is because the spam and ham messages are
+    pre-arranged.
+    
+    Number of Hidden Layers: More hidden layers will greatly increase the runtime
+    of the program, but they will also increase the accuracy.
+    
+2) Construct a neural network...
+
+    Check attached file.
+    
+3) Problem 4.8 from Tom Mitchell...
+
+    Check attached file.
